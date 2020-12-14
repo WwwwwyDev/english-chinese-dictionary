@@ -16,5 +16,5 @@ Widget::~Widget()
 
 void Widget::on_pushButton_clicked()
 {
-    qDebug() << "wadawd";
+    f1.show();
 }

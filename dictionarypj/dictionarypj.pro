@@ -16,17 +16,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    form1.cpp \
     main.cpp \
     orderedlist.cpp \
     tool.cpp \
     widget.cpp
 
 HEADERS += \
+    form1.h \
     orderedlist.h \
     tool.h \
     widget.h
 
 FORMS += \
+    form1.ui \
     widget.ui
 
 # Default rules for deployment.

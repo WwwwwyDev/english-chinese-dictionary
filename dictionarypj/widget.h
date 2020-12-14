@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <QDebug>
-
+#include "form1.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
@@ -21,5 +21,6 @@ private slots:
 
 private:
     Ui::Widget *ui;
+    Form1 f1;
 };
 #endif // WIDGET_H
