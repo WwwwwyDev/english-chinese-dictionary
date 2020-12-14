@@ -6,58 +6,38 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>298</width>
-    <height>272</height>
+    <width>482</width>
+    <height>352</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>英汉双解字典</string>
+   <string>数据结构课程设计</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>30</y>
-     <width>271</width>
-     <height>221</height>
+     <x>80</x>
+     <y>100</y>
+     <width>93</width>
+     <height>28</height>
     </rect>
    </property>
-   <property name="title">
-    <string>查询字典</string>
+   <property name="text">
+    <string>有序表</string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>输入:</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="lineEdit"/>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>查询</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>结果:</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>100</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>散列表</string>
+   </property>
   </widget>
  </widget>
  <resources/>

@@ -1,7 +1,8 @@
-#ifndef ORDEREDLIST_H
+﻿#ifndef ORDEREDLIST_H
 #define ORDEREDLIST_H
 #include <QFile>
 #include <QDebug>
+#include "tool.h"
 
 /*
  * @auther:wwy

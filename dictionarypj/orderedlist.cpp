@@ -1,4 +1,4 @@
-#include "orderedlist.h"
+﻿#include "orderedlist.h"
 OrderedList::OrderedList(QString fp)
 {
     this->filePath = fp;
@@ -12,7 +12,7 @@ void OrderedList::fileRead(QString fp)
         {
             QByteArray line = file.readLine();
             QString str(line);
-            qDebug() << str;
+            qDebug() << Tool::handleData(str);
         }
         file.close();
       }

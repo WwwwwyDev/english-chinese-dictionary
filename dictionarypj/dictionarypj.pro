@@ -18,10 +18,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     orderedlist.cpp \
+    tool.cpp \
     widget.cpp
 
 HEADERS += \
     orderedlist.h \
+    tool.h \
     widget.h
 
 FORMS += \
