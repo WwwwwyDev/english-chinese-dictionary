@@ -7,3 +7,4 @@ QStringList Tool::handleData(QString data)
     }
     return data.split(" ");
 }
+

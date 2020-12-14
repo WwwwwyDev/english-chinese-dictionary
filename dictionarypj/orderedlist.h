@@ -3,7 +3,7 @@
 #include <QFile>
 #include <QDebug>
 #include "tool.h"
-
+class Tool;
 /*
  * @auther:wwy
  * @date:2020/12/14
@@ -97,7 +97,17 @@ private:
      * @introduction:存放文件路径
      */
     QString filePath;
+    /*
+     * @introduction:线性表长度
+     */
+    int length;
 public:
+    /*
+     * @introduction:无参构造方法
+     * @pass:NULL
+     * @return:NULL
+     */
+    OrderedList();
     /*
      * @introduction:构造方法
      * @pass:fn读取文件的路径
@@ -116,6 +126,20 @@ public:
      * @return:找到的中文释义
      */
     QString searchWord(QString ew);
+    void olDebug(){
+
+        for(int i = 0; i < this->length; i++){
+            qDebug() << data[i].getEnglishWord()<<data[i].getChineseMeaning();
+        }
+        qDebug() <<"end";
+    }
+
+    /*
+     * @introduction:交换两个ListNode的值
+     * @pass:l1,l2为待交换的数据
+     * @return:NULL
+     */
+    static void swapln(ListNode &l1, ListNode &l2);
 
 };
 

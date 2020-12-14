@@ -2,7 +2,7 @@
 #define TOOL_H
 #include <QString>
 #include <QStringList>
-
+#include <QDebug>
 /*
  * @auther:wwy
  * @date:2020/12/14
@@ -19,6 +19,7 @@ public:
      * @return:数据处理后的列表
      */
     QStringList static handleData(QString data);
+
 };
 
 #endif // TOOL_H
