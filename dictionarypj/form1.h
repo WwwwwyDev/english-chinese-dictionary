@@ -15,6 +15,7 @@ class Form1 : public QWidget
 public:
     explicit Form1(QWidget *parent = nullptr);
     ~Form1();
+    void work();
 
 private slots:
     void on_pushButton_clicked();

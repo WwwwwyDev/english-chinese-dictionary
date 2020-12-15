@@ -1,12 +1,21 @@
 #include "form1.h"
 #include "ui_form1.h"
-
+#include <QWaitCondition>
 Form1::Form1(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Form1)
 {
     ui->setupUi(this);
     this->setFixedSize(this->width(),this->height());
+}
+
+Form1::~Form1()
+{
+    delete ui;
+}
+
+void Form1::work()
+{
     this->sumn = 0;
     for (int i = 0; i < 26; i++){
         QString str = QString("orderedlistdata/%1.wwy").arg(char('a'+i));
@@ -14,13 +23,7 @@ Form1::Form1(QWidget *parent) :
         this->word[i].fileRead(str);
         this->sumn += this->word[i].getLength();
     }
-    qDebug() << this->sumn;
     ui->label_12->setText(QString("%1").arg(this->sumn));
-}
-
-Form1::~Form1()
-{
-    delete ui;
 }
 
 void Form1::on_pushButton_clicked() //查找
