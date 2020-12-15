@@ -121,11 +121,26 @@ public:
      */
     void fileRead(QString fp);
     /*
+     * @introduction:将data数组数据写入文件
+     * @pass:fn写入文件的路径
+     * @return:NULL
+     */
+    void fileWrite(QString fp);
+    /*
      * @introduction:查找英语单词并输出它的中文释义
      * @pass:ew要查找的英语单词
      * @return:找到的中文释义
      */
     QString searchWord(QString ew);
+    /*
+     * @introduction:返回线性表长度
+     * @pass:NULL
+     * @return:线性表长度
+     */
+    int getLength()
+    {
+        return this->length;
+    }
     void olDebug(){
 
         for(int i = 0; i < this->length; i++){

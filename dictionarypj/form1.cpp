@@ -6,9 +6,10 @@ Form1::Form1(QWidget *parent) :
     ui(new Ui::Form1)
 {
     ui->setupUi(this);
-    this->word = OrderedList("z.txt");
-    word.fileRead("z.txt");
+    this->word = OrderedList("1.txt");
+    word.fileRead("1.txt");
     word.olDebug();
+    word.fileWrite("1.txt");
 }
 
 Form1::~Form1()
