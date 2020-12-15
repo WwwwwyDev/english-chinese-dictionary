@@ -37,6 +37,7 @@ void OrderedList::fileRead(QString fp)
 void OrderedList::fileWrite(QString fp)
 {
     QFile file(fp);
+    file.remove();
     if (file.open(QIODevice::ReadWrite | QIODevice::Text))
     {
         QTextStream stream(&file);
@@ -69,6 +70,61 @@ QString OrderedList::searchWord(QString ew)
     else
         return "no find";
 }
+bool OrderedList::insertWord(QString ew,QString cm)
+{
+    int leftBound = this->length; //左界
+    int l = 0;
+    int r  = this->length - 1;
+    while (l <= r)
+    {
+        int mid = (l+r) >> 1;
+        if(this->data[mid].getEnglishWord().compare(ew) >= 0)
+        {
+            leftBound = mid;
+            r = mid - 1;
+        }
+        else l = mid + 1;
+    }
+    if (this->data[leftBound].getEnglishWord().compare(ew) == 0)
+    {
+        return false;
+    }
+    for (int i = this->length; i > leftBound; i--)
+    {
+        OrderedList::swapln(this->data[i],this->data[i-1]);
+    }
+    this->length ++;
+    this->data[leftBound].setEnglishWord(ew);
+    this->data[leftBound].setChineseMeaning(cm);
+    return true;
+}
+
+bool OrderedList:: deleteWord(QString ew)
+{
+    int leftBound = this->length; //左界
+    int l = 0;
+    int r  = this->length - 1;
+    while (l <= r)
+    {
+        int mid = (l+r) >> 1;
+        if(this->data[mid].getEnglishWord().compare(ew) >= 0)
+        {
+            leftBound = mid;
+            r = mid - 1;
+        }
+        else l = mid + 1;
+    }
+    if (this->data[leftBound].getEnglishWord().compare(ew) != 0)
+    {
+        return false;
+    }
+    for (int i = leftBound; i < this->length - 1; i++)
+    {
+        OrderedList::swapln(this->data[i],this->data[i + 1]);
+    }
+    this->length --;
+    return true;
+}
 
 void OrderedList::swapln(ListNode &l1, ListNode &l2){
     QString tempew = l2.getEnglishWord();
@@ -76,5 +132,5 @@ void OrderedList::swapln(ListNode &l1, ListNode &l2){
     l2.setEnglishWord(l1.getEnglishWord());
     l2.setChineseMeaning(l1.getChineseMeaning());
     l1.setEnglishWord(tempew);
-    l2.setChineseMeaning(tempcm);
+    l1.setChineseMeaning(tempcm);
 }

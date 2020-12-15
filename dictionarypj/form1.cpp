@@ -9,6 +9,8 @@ Form1::Form1(QWidget *parent) :
     this->word = OrderedList("1.txt");
     word.fileRead("1.txt");
     word.olDebug();
+    word.deleteWord("zebra");
+    word.insertWord("zebra","hello");
     word.fileWrite("1.txt");
 }
 

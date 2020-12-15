@@ -133,6 +133,18 @@ public:
      */
     QString searchWord(QString ew);
     /*
+     * @introduction:添加单词
+     * @pass:待添加的英语单词和中文释义
+     * @return:NULL
+     */
+    bool insertWord(QString ew, QString cm);
+    /*
+     * @introduction:删除单词
+     * @pass:待删除的英语单词
+     * @return:删除是否成功
+     */
+    bool deleteWord(QString ew);
+    /*
      * @introduction:返回线性表长度
      * @pass:NULL
      * @return:线性表长度
