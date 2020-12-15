@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>870</width>
-    <height>274</height>
+    <width>881</width>
+    <height>293</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>查找单词</string>
+    <string>查找单词O(logn)</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -81,7 +81,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>添加单词</string>
+    <string>添加单词O(logn + n)</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
@@ -161,7 +161,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>删除单词</string>
+    <string>删除单词O(logn + n)</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
@@ -208,6 +208,32 @@
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>260</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>共计录入:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>260</y>
+     <width>68</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
  </widget>
  <resources/>

@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
@@ -24,18 +25,22 @@ class Ui_Widget
 public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
+    QLabel *label;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QStringLiteral("Widget"));
-        Widget->resize(482, 352);
+        Widget->resize(507, 269);
         pushButton = new QPushButton(Widget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(80, 100, 93, 28));
+        pushButton->setGeometry(QRect(30, 160, 93, 28));
         pushButton_2 = new QPushButton(Widget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(270, 100, 93, 28));
+        pushButton_2->setGeometry(QRect(190, 160, 93, 28));
+        label = new QLabel(Widget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(30, 30, 441, 81));
 
         retranslateUi(Widget);
 
@@ -47,6 +52,7 @@ public:
         Widget->setWindowTitle(QApplication::translate("Widget", "\346\225\260\346\215\256\347\273\223\346\236\204\350\257\276\347\250\213\350\256\276\350\256\241", Q_NULLPTR));
         pushButton->setText(QApplication::translate("Widget", "\346\234\211\345\272\217\350\241\250", Q_NULLPTR));
         pushButton_2->setText(QApplication::translate("Widget", "\346\225\243\345\210\227\350\241\250", Q_NULLPTR));
+        label->setText(QApplication::translate("Widget", "<html><head/><body><p>\346\225\260\346\215\256\347\273\223\346\236\204\350\257\276\347\250\213\350\256\276\350\256\241-\345\220\264\346\226\207\347\233\212</p><p>gitee\347\211\210\346\234\254\345\272\223\345\234\260\345\235\200</p><p><a href=\"https://gitee.com/wu_wen_yi/english-chinese-dictionary/\"><span style=\" text-decoration: underline; color:#007af4;\">https://gitee.com/wu_wen_yi/english-chinese-dictionary/</span></a></p></body></html>", Q_NULLPTR));
     } // retranslateUi
 
 };

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>482</width>
-    <height>352</height>
+    <width>507</width>
+    <height>269</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>100</y>
+     <x>30</x>
+     <y>160</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -29,14 +29,27 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>100</y>
+     <x>190</x>
+     <y>160</y>
      <width>93</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
     <string>散列表</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>441</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;数据结构课程设计-吴文益&lt;/p&gt;&lt;p&gt;gitee版本库地址&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://gitee.com/wu_wen_yi/english-chinese-dictionary/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;https://gitee.com/wu_wen_yi/english-chinese-dictionary/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

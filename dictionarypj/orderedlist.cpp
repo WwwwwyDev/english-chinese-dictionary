@@ -75,7 +75,7 @@ bool OrderedList::insertWord(QString ew,QString cm)
     int leftBound = this->length; //左界
     int l = 0;
     int r  = this->length - 1;
-    while (l <= r)
+    while (l <= r)  //二分查找到该单词在线性表中的位置O(logn)
     {
         int mid = (l+r) >> 1;
         if(this->data[mid].getEnglishWord().compare(ew) >= 0)
@@ -85,11 +85,11 @@ bool OrderedList::insertWord(QString ew,QString cm)
         }
         else l = mid + 1;
     }
-    if (this->data[leftBound].getEnglishWord().compare(ew) == 0)
+    if (this->data[leftBound].getEnglishWord().compare(ew) == 0) //如果相等就说明已经存在这个单词，插入失败
     {
         return false;
     }
-    for (int i = this->length; i > leftBound; i--)
+    for (int i = this->length; i > leftBound; i--)  //线性插入O(n)
     {
         OrderedList::swapln(this->data[i],this->data[i-1]);
     }
@@ -104,7 +104,7 @@ bool OrderedList:: deleteWord(QString ew)
     int leftBound = this->length; //左界
     int l = 0;
     int r  = this->length - 1;
-    while (l <= r)
+    while (l <= r) //二分查找到该单词在线性表中的位置O(logn)
     {
         int mid = (l+r) >> 1;
         if(this->data[mid].getEnglishWord().compare(ew) >= 0)
@@ -114,11 +114,11 @@ bool OrderedList:: deleteWord(QString ew)
         }
         else l = mid + 1;
     }
-    if (this->data[leftBound].getEnglishWord().compare(ew) != 0)
+    if (this->data[leftBound].getEnglishWord().compare(ew) != 0) //如果不相等就说明没有这个单词，插入失败
     {
         return false;
     }
-    for (int i = leftBound; i < this->length - 1; i++)
+    for (int i = leftBound; i < this->length - 1; i++)  //线性插入O(n)
     {
         OrderedList::swapln(this->data[i],this->data[i + 1]);
     }

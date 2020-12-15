@@ -6,11 +6,16 @@ Form1::Form1(QWidget *parent) :
     ui(new Ui::Form1)
 {
     ui->setupUi(this);
+    this->setFixedSize(this->width(),this->height());
+    this->sumn = 0;
     for (int i = 0; i < 26; i++){
         QString str = QString("orderedlistdata/%1.wwy").arg(char('a'+i));
         this->word[i] = OrderedList(str);
         this->word[i].fileRead(str);
+        this->sumn += this->word[i].getLength();
     }
+    qDebug() << this->sumn;
+    ui->label_12->setText(QString("%1").arg(this->sumn));
 }
 
 Form1::~Form1()
@@ -51,6 +56,8 @@ void Form1::on_pushButton_2_clicked()  //添加
         if (word[headew - 'a'].insertWord(ew,cm))
         {
             this->word[headew - 'a'].fileWrite(this->word[headew - 'a'].getFilePath());
+            this->sumn ++;
+            ui->label_12->setText(QString("%1").arg(this->sumn));
             ui->label_4->setText("successful");
         }
         else ui->label_4->setText("the word is already existent");
@@ -73,6 +80,8 @@ void Form1::on_pushButton_3_clicked() //删除
         if (word[headew - 'a'].deleteWord(ew))
         {
             word[headew - 'a'].fileWrite(this->word[headew - 'a'].getFilePath());
+            this->sumn --;
+            ui->label_12->setText(QString("%1").arg(this->sumn));
             ui->label_6->setText("successful");
         }
         else ui->label_6->setText("the word isn't existent");
