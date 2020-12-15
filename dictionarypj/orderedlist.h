@@ -153,6 +153,15 @@ public:
     {
         return this->length;
     }
+    /*
+     * @introduction:返回当前对应文件路径
+     * @pass:NULL
+     * @return:返回当前文件对应路径
+     */
+    QString getFilePath()
+    {
+        return this->filePath;
+    }
     void olDebug(){
 
         for(int i = 0; i < this->length; i++){
