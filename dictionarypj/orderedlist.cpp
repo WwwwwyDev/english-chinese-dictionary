@@ -4,12 +4,12 @@ OrderedList::OrderedList()
     this->filePath = nullptr;
     this->length = 0;
 }
-OrderedList::OrderedList(QString fp)
+OrderedList::OrderedList(const QString &fp)
 {
     this->filePath = fp;
     this->length = 0;
 }
-void OrderedList::fileRead(QString fp)
+void OrderedList::fileRead(const QString &fp)
 {
     QFile file(fp);
     if (file.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -34,7 +34,7 @@ void OrderedList::fileRead(QString fp)
         file.close();
       }
 }
-void OrderedList::fileWrite(QString fp)
+void OrderedList::fileWrite(const QString &fp)
 {
     QFile file(fp);
     file.remove();
@@ -50,7 +50,7 @@ void OrderedList::fileWrite(QString fp)
     }
 }
 
-QString OrderedList::searchWord(QString ew)
+QString OrderedList::searchWord(const QString &ew)
 {
     ListNode res;
     int l = 0;
@@ -70,7 +70,7 @@ QString OrderedList::searchWord(QString ew)
     else
         return "no find";
 }
-bool OrderedList::insertWord(QString ew,QString cm)
+bool OrderedList::insertWord(const QString &ew,const QString &cm)
 {
     int leftBound = this->length; //左界
     int l = 0;
@@ -99,7 +99,7 @@ bool OrderedList::insertWord(QString ew,QString cm)
     return true;
 }
 
-bool OrderedList:: deleteWord(QString ew)
+bool OrderedList:: deleteWord(const QString &ew)
 {
     int leftBound = this->length; //左界
     int l = 0;

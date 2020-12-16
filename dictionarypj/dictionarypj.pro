@@ -17,7 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     form1.cpp \
-    hashlist.cpp \
+    hashmap.cpp \
     main.cpp \
     orderedlist.cpp \
     tool.cpp \
@@ -25,7 +25,7 @@ SOURCES += \
 
 HEADERS += \
     form1.h \
-    hashlist.h \
+    hashmap.h \
     orderedlist.h \
     tool.h \
     widget.h

@@ -113,37 +113,37 @@ public:
      * @pass:fn读取文件的路径
      * @return:NULL
      */
-    OrderedList(QString fp);
+    OrderedList(const QString &fp);
     /*
      * @introduction:读取文件数据到data数组
      * @pass:fn读取文件的路径
      * @return:NULL
      */
-    void fileRead(QString fp);
+    void fileRead(const QString &fp);
     /*
      * @introduction:将data数组数据写入文件
      * @pass:fn写入文件的路径
      * @return:NULL
      */
-    void fileWrite(QString fp);
+    void fileWrite(const QString &fp);
     /*
      * @introduction:查找英语单词并输出它的中文释义
      * @pass:ew要查找的英语单词
      * @return:找到的中文释义
      */
-    QString searchWord(QString ew);
+    QString searchWord(const QString &ew);
     /*
      * @introduction:添加单词
      * @pass:待添加的英语单词和中文释义
      * @return:NULL
      */
-    bool insertWord(QString ew, QString cm);
+    bool insertWord(const QString &ew, const QString &cm);
     /*
      * @introduction:删除单词
      * @pass:待删除的英语单词
      * @return:删除是否成功
      */
-    bool deleteWord(QString ew);
+    bool deleteWord(const QString &ew);
     /*
      * @introduction:返回线性表长度
      * @pass:NULL
