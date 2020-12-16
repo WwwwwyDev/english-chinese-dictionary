@@ -8,6 +8,7 @@ Form1::Form1(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setFixedSize(this->width(),this->height());
+    this->sumn = 0;
 }
 
 Form1::~Form1()
@@ -17,7 +18,6 @@ Form1::~Form1()
 
 void Form1::work()
 {
-    this->sumn = 0;
     for (int i = 0; i < 26; i++){
         QString str = QString("orderedlistdata/%1.txt").arg(char('a'+i));
         this->word[i] = OrderedList(str);

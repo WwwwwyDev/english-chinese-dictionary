@@ -65,12 +65,14 @@ HashMap::HashMap()
 {
     this->filePath = nullptr;
     this->range = 0;
+    this->length = 0;
 }
 
 HashMap::HashMap(const QString &fp, int rg)
 {
     this->filePath = fp;
     this->range = rg;
+    this->length = 0;
 }
 
 void HashMap::fileRead(const QString &fp)

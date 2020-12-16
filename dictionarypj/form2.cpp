@@ -7,6 +7,7 @@ Form2::Form2(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setFixedSize(this->width(),this->height());
+    this->sumn = 0;
 }
 
 Form2::~Form2()
@@ -16,7 +17,6 @@ Form2::~Form2()
 
 void Form2::work()
 {
-    this->sumn = 0;
     for (int i = 0; i < 26; i++){
         QString str = QString("hashmapdata/%1.txt").arg(char('a'+i));
         this->word[i] = HashMap(str,500);

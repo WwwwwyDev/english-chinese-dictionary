@@ -406,6 +406,12 @@ debug\moc_form2.cpp: C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfiledevice.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qvector2d.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtouchdevice.h \
+		..\dictionarypj\hashmap.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QString \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QDebug \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QFile \
+		..\dictionarypj\tool.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
 		..\dictionarypj\form2.h \
 		debug\moc_predefs.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\bin\moc.exe
@@ -518,6 +524,8 @@ debug\moc_widget.cpp: C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget 
 		..\dictionarypj\tool.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QString \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
+		..\dictionarypj\form2.h \
+		..\dictionarypj\hashmap.h \
 		..\dictionarypj\widget.h \
 		debug\moc_predefs.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\bin\moc.exe
@@ -661,7 +669,10 @@ debug\form1.obj: ..\dictionarypj\form1.cpp ../dictionarypj/form1.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
 		ui_form1.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QWaitCondition \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qwaitcondition.h
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qwaitcondition.h \
+		../dictionarypj/widget.h \
+		../dictionarypj/form2.h \
+		../dictionarypj/hashmap.h
 
 debug\form2.obj: ..\dictionarypj\form2.cpp ../dictionarypj/form2.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
@@ -764,7 +775,16 @@ debug\form2.obj: ..\dictionarypj\form2.cpp ../dictionarypj/form2.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfiledevice.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qvector2d.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtouchdevice.h \
-		ui_form2.h
+		../dictionarypj/hashmap.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QString \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QDebug \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QFile \
+		../dictionarypj/tool.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
+		ui_form2.h \
+		../dictionarypj/widget.h \
+		../dictionarypj/form1.h \
+		../dictionarypj/orderedlist.h
 
 debug\hashmap.obj: ..\dictionarypj\hashmap.cpp ../dictionarypj/hashmap.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QString \
@@ -943,14 +963,15 @@ debug\main.obj: ..\dictionarypj\main.cpp ../dictionarypj/widget.h \
 		../dictionarypj/tool.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QString \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
+		../dictionarypj/form2.h \
+		../dictionarypj/hashmap.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QApplication \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qapplication.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcoreapplication.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qeventloop.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qdesktopwidget.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qguiapplication.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qinputmethod.h \
-		../dictionarypj/hashmap.h
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qinputmethod.h
 
 debug\orderedlist.obj: ..\dictionarypj\orderedlist.cpp ../dictionarypj/orderedlist.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QFile \
@@ -1194,6 +1215,8 @@ debug\widget.obj: ..\dictionarypj\widget.cpp ../dictionarypj/widget.h \
 		../dictionarypj/tool.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QString \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
+		../dictionarypj/form2.h \
+		../dictionarypj/hashmap.h \
 		ui_widget.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QProgressDialog \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qprogressdialog.h \
