@@ -36,7 +36,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>添加单词O(logn + n)</string>
+    <string>添加单词O(log1)</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
@@ -116,7 +116,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>删除单词O(logn + n)</string>
+    <string>删除单词O(log1)</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
@@ -246,6 +246,19 @@
    </property>
    <property name="text">
     <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>0</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>n为每个散列映射对应链表的长度</string>
    </property>
   </widget>
  </widget>
