@@ -51,7 +51,7 @@ bool LinkedList::deleteWord(const QString &ew)
         if (p->getEnglishWord().compare(ew) == 0)
         {
             p->pre->next = p->next;
-            p->next->pre = p->pre;
+            if (p->next) p->next->pre = p->pre;
             delete p;
             this->lenth --;
             return true;
@@ -84,8 +84,66 @@ void HashMap::fileRead(const QString &fp)
             QString str = QString::fromLocal8Bit(line);
             QStringList strl = Tool::handleData(str);
             this->map[HashMap::djb2(strl[0],this->range)].addToHead(strl[0], strl[strl.length()-1]);
+            this->length ++;
         }
         file.close();
+    }
+}
+
+void HashMap::fileWrite(const QString &fp)
+{
+    QFile file(fp);
+    file.remove();
+    if (file.open(QIODevice::ReadWrite | QIODevice::Text))
+    {
+        QTextStream stream(&file);
+        for (int i = 0; i < this->range; i++)
+        {
+            if (map[i].getLength() > 0)
+            {
+                ListNode2 *p = map[i].getHead()->next;
+                while(p)
+                {
+                    QString qs = p->getEnglishWord() + " " + p->getChineseMeaning();
+                    stream << qs << "\n";
+                    p = p->next;
+                }
+            }
+        }
+        file.close();
+    }
+}
+QString HashMap::searchWord(const QString &ew)
+{
+    int idx = HashMap::djb2(ew, this->range);
+    return this->map[idx].searchWord(ew);
+}
+
+bool HashMap::insertWord(const QString &ew, const QString &cm)
+{
+    int idx = HashMap::djb2(ew, this->range);
+    if (this->map[idx].addToHead(ew, cm))
+    {
+        this->length ++;
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+bool HashMap::deleteWord(const QString &ew)
+{
+    int idx = HashMap::djb2(ew, this->range);
+    if (this->map[idx].deleteWord(ew))
+    {
+        this->length --;
+        return true;
+    }
+    else
+    {
+        return false;
     }
 }
 

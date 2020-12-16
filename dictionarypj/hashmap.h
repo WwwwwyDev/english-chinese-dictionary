@@ -151,6 +151,10 @@ public:
     {
         return this->lenth;
     }
+    ListNode2* getHead()
+    {
+        return this->head;
+    }
 };
 
 /*
@@ -165,11 +169,15 @@ private:
     /*
      * @introduction:哈希表存储
      */
-    LinkedList map[2000];
+    LinkedList map[510];
     /*
-     * @introduction:哈希表最大范围0~range,range<2000
+     * @introduction:哈希表最大范围0~range,range<500
      */
     int range;
+    /*
+     * @introduction:当前表中单词数
+     */
+    int length;
     /*
      * @introduction:存放文件路径
      */
@@ -194,6 +202,30 @@ public:
      */
     void fileRead(const QString &fp);
     /*
+     * @introduction:将数据写入文件
+     * @pass:fn写入文件的路径
+     * @return:NULL
+     */
+    void fileWrite(const QString &fp);
+    /*
+     * @introduction:查找英语单词并输出它的中文释义
+     * @pass:ew要查找的英语单词
+     * @return:找到的中文释义
+     */
+    QString searchWord(const QString &ew);
+    /*
+     * @introduction:添加单词
+     * @pass:待添加的英语单词和中文释义
+     * @return:NULL
+     */
+    bool insertWord(const QString &ew, const QString &cm);
+    /*
+     * @introduction:删除单词
+     * @pass:待删除的英语单词
+     * @return:删除是否成功
+     */
+    bool deleteWord(const QString &ew);
+    /*
      * @introduction:djb2哈希函数
      * @pass:ew为英语单词,mod为对hash值取余(防止溢出)
      * @return:取余后的哈希值;
@@ -202,10 +234,31 @@ public:
     {
         for(int i = 0; i < this->range; i++)
         {
-            qDebug() << i;
-            map[i].lsDebug();
+            if (map[i].getLength()>0)
+            {
+                qDebug() << i;
+                map[i].lsDebug();
+            }
         }
         qDebug() << "end";
+    }
+    /*
+     * @introduction:返回当前对应文件路径
+     * @pass:NULL
+     * @return:返回当前文件对应路径
+     */
+    QString getFilePath()
+    {
+        return this->filePath;
+    }
+    /*
+     * @introduction:返回当前表单词数量
+     * @pass:NULL
+     * @return:单词数量
+     */
+    int getLength()
+    {
+        return this->length;
     }
     int static djb2(const QString &ew,int mod);
 };
