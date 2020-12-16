@@ -61,7 +61,8 @@ void Form1::on_pushButton_2_clicked()  //添加
             this->word[headew - 'a'].fileWrite(this->word[headew - 'a'].getFilePath());
             this->sumn ++;
             ui->label_12->setText(QString("%1").arg(this->sumn));
-            ui->label_4->setText("successful");
+            QString ifm = "successfully add " + ew;
+            ui->label_4->setText(ifm);
         }
         else ui->label_4->setText("the word is already existent");
     }
@@ -85,7 +86,8 @@ void Form1::on_pushButton_3_clicked() //删除
             word[headew - 'a'].fileWrite(this->word[headew - 'a'].getFilePath());
             this->sumn --;
             ui->label_12->setText(QString("%1").arg(this->sumn));
-            ui->label_6->setText("successful");
+            QString ifm = "successfully delete " + ew;
+            ui->label_6->setText(ifm);
         }
         else ui->label_6->setText("the word isn't existent");
     }

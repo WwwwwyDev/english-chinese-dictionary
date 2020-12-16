@@ -27,7 +27,7 @@ public:
      * @pass:ew传入的英文单词，cm传入的中文释义
      * @return:NULL
      */
-    ListNode(QString ew, QString cm)
+    ListNode(const QString &ew, const QString &cm)
     {
         this->englishWord = ew;
         this->chineseMeaning = cm;
@@ -47,7 +47,7 @@ public:
      * @pass:ew传入英文单词
      * @return:NULL
      */
-    void setEnglishWord(QString ew)
+    void setEnglishWord(const QString &ew)
     {
         this->englishWord = ew;
     }
@@ -65,7 +65,7 @@ public:
      * @pass:cm传入中文释义
      * @return:NULL
      */
-    void setChineseMeaning(QString cm)
+    void setChineseMeaning(const QString &cm)
     {
         this->chineseMeaning = cm;
     }

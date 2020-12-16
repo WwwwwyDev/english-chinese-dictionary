@@ -2,6 +2,8 @@
 #define HASHMAP_H
 #include <QString>
 #include <QDebug>
+#include <QFile>
+#include "tool.h"
 /*
  * @auther:wwy
  * @date:2020/12/16
@@ -32,7 +34,7 @@ public:
      * @pass:ew传入的英文单词，cm传入的中文释义
      * @return:NULL
      */
-    ListNode2(QString ew, QString cm)
+    ListNode2(const QString &ew, const QString &cm)
     {
         this->englishWord = ew;
         this->chineseMeaning = cm;
@@ -56,7 +58,7 @@ public:
      * @pass:ew传入英文单词
      * @return:NULL
      */
-    void setEnglishWord(QString ew)
+    void setEnglishWord(const QString &ew)
     {
         this->englishWord = ew;
     }
@@ -74,7 +76,7 @@ public:
      * @pass:cm传入中文释义
      * @return:NULL
      */
-    void setChineseMeaning(QString cm)
+    void setChineseMeaning(const QString &cm)
     {
         this->chineseMeaning = cm;
     }
@@ -139,7 +141,6 @@ public:
             qDebug() << p->getEnglishWord() << " "<<p->getChineseMeaning();
             p = p->next;
         }
-        qDebug() <<"end";
     }
     /*
      * @introduction:获取双链表长度
@@ -160,12 +161,52 @@ public:
  */
 class HashMap
 {
+private:
+    /*
+     * @introduction:哈希表存储
+     */
+    LinkedList map[2000];
+    /*
+     * @introduction:哈希表最大范围0~range,range<2000
+     */
+    int range;
+    /*
+     * @introduction:存放文件路径
+     */
+    QString filePath;
 public:
+    /*
+     * @introduction:无参构造方法
+     * @pass:NULL
+     * @return:NULL
+     */
+    HashMap();
+    /*
+     * @introduction:无参构造方法
+     * @pass:fp文件路径,rg初始化范围
+     * @return:NULL
+     */
+    HashMap(const QString &fp, int rg);
+    /*
+     * @introduction:从文件读取数据
+     * @pass:fp文件路径
+     * @return:NULL
+     */
+    void fileRead(const QString &fp);
     /*
      * @introduction:djb2哈希函数
      * @pass:ew为英语单词,mod为对hash值取余(防止溢出)
      * @return:取余后的哈希值;
      */
+    void hsDebug()
+    {
+        for(int i = 0; i < this->range; i++)
+        {
+            qDebug() << i;
+            map[i].lsDebug();
+        }
+        qDebug() << "end";
+    }
     int static djb2(const QString &ew,int mod);
 };
 

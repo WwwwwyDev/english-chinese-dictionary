@@ -61,6 +61,33 @@ bool LinkedList::deleteWord(const QString &ew)
     return false;
 }
 
+HashMap::HashMap()
+{
+    this->filePath = nullptr;
+    this->range = 0;
+}
+
+HashMap::HashMap(const QString &fp, int rg)
+{
+    this->filePath = fp;
+    this->range = rg;
+}
+
+void HashMap::fileRead(const QString &fp)
+{
+    QFile file(fp);
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        while(!file.atEnd())
+        {
+            QByteArray line = file.readLine();
+            QString str = QString::fromLocal8Bit(line);
+            QStringList strl = Tool::handleData(str);
+            this->map[HashMap::djb2(strl[0],this->range)].addToHead(strl[0], strl[strl.length()-1]);
+        }
+        file.close();
+    }
+}
 
 int HashMap::djb2(const QString &ew,int mod)
 {
