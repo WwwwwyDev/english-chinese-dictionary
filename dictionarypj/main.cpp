@@ -5,8 +5,10 @@ int main(int argc, char *argv[])
 {
     TrieTree t("l.txt");
     t.fileRead("l.txt");
-    qDebug() <<t.insertWord("l/c","test");
-    qDebug() << t.searchWord("above-mentioned");
+    t.insertWord("lppw","test");
+    t.deleteWord("lppw");
+    qDebug() << t.searchWord("l/c");
+    t.fileWrite("l.txt");
     QApplication a(argc, argv);
     Widget w;
     w.show();

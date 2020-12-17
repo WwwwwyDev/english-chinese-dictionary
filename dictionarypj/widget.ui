@@ -16,7 +16,7 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>30</x>
      <y>160</y>
      <width>93</width>
      <height>28</height>
@@ -29,7 +29,7 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>310</x>
+     <x>190</x>
      <y>160</y>
      <width>93</width>
      <height>28</height>
@@ -50,6 +50,19 @@
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;数据结构课程设计-吴文益&lt;/p&gt;&lt;p&gt;gitee版本库地址&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://gitee.com/wu_wen_yi/english-chinese-dictionary/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;https://gitee.com/wu_wen_yi/english-chinese-dictionary/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>160</y>
+     <width>84</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ttir</string>
    </property>
   </widget>
  </widget>

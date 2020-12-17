@@ -3,6 +3,7 @@
 #include <QString>
 #include <QFile>
 #include "tool.h"
+#include <QQueue>
 /*
  * @auther:wwy
  * @date:2020/12/17
