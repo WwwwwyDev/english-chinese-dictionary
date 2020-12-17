@@ -62,6 +62,7 @@ public:
     QLabel *label_3;
     QLabel *label_12;
     QPushButton *pushButton_4;
+    QLabel *label_13;
 
     void setupUi(QWidget *Form2)
     {
@@ -213,6 +214,9 @@ public:
         pushButton_4 = new QPushButton(Form2);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
         pushButton_4->setGeometry(QRect(750, 260, 84, 24));
+        label_13 = new QLabel(Form2);
+        label_13->setObjectName(QStringLiteral("label_13"));
+        label_13->setGeometry(QRect(30, 0, 231, 21));
 
         retranslateUi(Form2);
 
@@ -223,24 +227,25 @@ public:
     {
         Form2->setWindowTitle(QApplication::translate("Form2", "\350\213\261\346\261\211\345\255\227\345\205\270\346\225\243\345\210\227\350\241\250", Q_NULLPTR));
         label_11->setText(QApplication::translate("Form2", "\345\205\261\350\256\241\345\275\225\345\205\245:", Q_NULLPTR));
-        groupBox_2->setTitle(QApplication::translate("Form2", "\346\267\273\345\212\240\345\215\225\350\257\215O(logn + n)", Q_NULLPTR));
+        groupBox_2->setTitle(QApplication::translate("Form2", "\346\267\273\345\212\240\345\215\225\350\257\215O(1)", Q_NULLPTR));
         label_8->setText(QApplication::translate("Form2", "\345\215\225\350\257\215", Q_NULLPTR));
         label_9->setText(QApplication::translate("Form2", "\351\207\212\344\271\211", Q_NULLPTR));
         pushButton_2->setText(QApplication::translate("Form2", "\346\267\273\345\212\240", Q_NULLPTR));
         label->setText(QApplication::translate("Form2", "\345\217\215\351\246\210\344\277\241\346\201\257", Q_NULLPTR));
         label_4->setText(QString());
-        groupBox_3->setTitle(QApplication::translate("Form2", "\345\210\240\351\231\244\345\215\225\350\257\215O(logn + n)", Q_NULLPTR));
+        groupBox_3->setTitle(QApplication::translate("Form2", "\345\210\240\351\231\244\345\215\225\350\257\215O(1)", Q_NULLPTR));
         label_10->setText(QApplication::translate("Form2", "\345\215\225\350\257\215", Q_NULLPTR));
         pushButton_3->setText(QApplication::translate("Form2", "\345\210\240\351\231\244", Q_NULLPTR));
         label_5->setText(QApplication::translate("Form2", "\345\217\215\351\246\210\344\277\241\346\201\257", Q_NULLPTR));
         label_6->setText(QString());
-        groupBox->setTitle(QApplication::translate("Form2", "\346\237\245\346\211\276\345\215\225\350\257\215O(logn)", Q_NULLPTR));
+        groupBox->setTitle(QApplication::translate("Form2", "\346\237\245\346\211\276\345\215\225\350\257\215O(n)", Q_NULLPTR));
         label_7->setText(QApplication::translate("Form2", "\345\215\225\350\257\215", Q_NULLPTR));
         pushButton->setText(QApplication::translate("Form2", "\346\237\245\346\211\276", Q_NULLPTR));
         label_2->setText(QApplication::translate("Form2", "\346\261\211\345\255\227\350\247\243\351\207\212", Q_NULLPTR));
         label_3->setText(QString());
         label_12->setText(QString());
         pushButton_4->setText(QApplication::translate("Form2", "\350\277\224\345\233\236", Q_NULLPTR));
+        label_13->setText(QApplication::translate("Form2", "n\344\270\272\346\257\217\344\270\252\346\225\243\345\210\227\346\230\240\345\260\204\345\257\271\345\272\224\351\223\276\350\241\250\347\232\204\351\225\277\345\272\246", Q_NULLPTR));
     } // retranslateUi
 
 };

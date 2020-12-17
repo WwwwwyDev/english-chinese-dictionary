@@ -18,23 +18,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     form1.cpp \
     form2.cpp \
+    form3.cpp \
     hashmap.cpp \
     main.cpp \
     orderedlist.cpp \
     tool.cpp \
+    trietree.cpp \
     widget.cpp
 
 HEADERS += \
     form1.h \
     form2.h \
+    form3.h \
     hashmap.h \
     orderedlist.h \
     tool.h \
+    trietree.h \
     widget.h
 
 FORMS += \
     form1.ui \
     form2.ui \
+    form3.ui \
     widget.ui
 
 # Default rules for deployment.
