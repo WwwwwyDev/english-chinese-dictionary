@@ -36,7 +36,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>添加单词O(log1)</string>
+    <string>添加单词O(1)</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
@@ -116,7 +116,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>删除单词O(log1)</string>
+    <string>删除单词O(1)</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
@@ -174,7 +174,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>查找单词O(logn)</string>
+    <string>查找单词O(n)</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>

@@ -118,13 +118,13 @@ void HashMap::fileWrite(const QString &fp)
 QString HashMap::searchWord(const QString &ew)
 {
     int idx = HashMap::djb2(ew, this->range);
-    return this->map[idx].searchWord(ew);
+    return this->map[idx].searchWord(ew); //O(n)
 }
 
 bool HashMap::insertWord(const QString &ew, const QString &cm)
 {
     int idx = HashMap::djb2(ew, this->range);
-    if (this->map[idx].addToHead(ew, cm))
+    if (this->map[idx].addToHead(ew, cm)) //O(1)
     {
         this->length ++;
         return true;
@@ -138,7 +138,7 @@ bool HashMap::insertWord(const QString &ew, const QString &cm)
 bool HashMap::deleteWord(const QString &ew)
 {
     int idx = HashMap::djb2(ew, this->range);
-    if (this->map[idx].deleteWord(ew))
+    if (this->map[idx].deleteWord(ew)) //O(1)
     {
         this->length --;
         return true;
