@@ -5,6 +5,7 @@
 #include <QDebug>
 #include "form1.h"
 #include "form2.h"
+#include "form3.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
@@ -21,6 +22,8 @@ private slots:
     void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::Widget *ui;

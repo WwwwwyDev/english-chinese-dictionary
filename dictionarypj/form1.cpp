@@ -19,7 +19,7 @@ Form1::~Form1()
 void Form1::work()
 {
     for (int i = 0; i < 26; i++){
-        QString str = QString("orderedlistdata/%1.txt").arg(char('a'+i));
+        QString str = QString("noorderdata/%1.txt").arg(char('a'+i));
         this->word[i] = OrderedList(str);
         this->word[i].fileRead(str);
         this->sumn += this->word[i].getLength();

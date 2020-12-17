@@ -18,7 +18,7 @@ Form2::~Form2()
 void Form2::work()
 {
     for (int i = 0; i < 26; i++){
-        QString str = QString("hashmapdata/%1.txt").arg(char('a'+i));
+        QString str = QString("noorderdata/%1.txt").arg(char('a'+i));
         this->word[i] = HashMap(str,500);
         this->word[i].fileRead(str);
         this->sumn += this->word[i].getLength();

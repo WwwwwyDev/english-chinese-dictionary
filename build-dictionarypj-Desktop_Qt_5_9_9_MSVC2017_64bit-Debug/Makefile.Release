@@ -427,10 +427,10 @@ release\moc_form2.cpp: C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\bin\moc.exe
 	C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.9/5.9.9/msvc2017_64/mkspecs/win32-msvc -IE:/Project/QT_project/english-chinese-dictionary/dictionarypj -IC:/Qt/Qt5.9.9/5.9.9/msvc2017_64/include -IC:/Qt/Qt5.9.9/5.9.9/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.9/5.9.9/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.9/5.9.9/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.9/5.9.9/msvc2017_64/include/QtCore -I. -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt" ..\dictionarypj\form2.h -o release\moc_form2.cpp
 
-release\moc_form3.cpp: C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qwidget.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qtwidgetsglobal.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtguiglobal.h \
+release\moc_form3.cpp: ..\dictionarypj\trietree.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QString \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qstring.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qchar.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qglobal.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qconfig-bootstrapped.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qconfig.h \
@@ -452,20 +452,18 @@ release\moc_form3.cpp: C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmutex.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qnumeric.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qversiontagging.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtgui-config.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qtwidgets-config.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qwindowdefs.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobjectdefs.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qnamespace.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobjectdefs_impl.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qwindowdefs_win.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobject.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qstring.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qchar.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qbytearray.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qrefcount.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qnamespace.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qarraydata.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qstringbuilder.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QFile \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfile.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfiledevice.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qiodevice.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobject.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobjectdefs.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobjectdefs_impl.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qlist.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qalgorithms.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qiterator.h \
@@ -481,32 +479,51 @@ release\moc_form3.cpp: C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvarlengtharray.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcontainerfwd.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobject_impl.h \
+		..\dictionarypj\tool.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QDebug \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qdebug.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qhash.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmap.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qtextstream.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qlocale.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvariant.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qshareddata.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvector.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qpoint.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qset.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcontiguouscache.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer_impl.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QQueue \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qqueue.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qwidget.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qtwidgetsglobal.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtguiglobal.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtgui-config.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qtwidgets-config.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qwindowdefs.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qwindowdefs_win.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmargins.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpaintdevice.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qrect.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsize.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qpoint.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpalette.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qcolor.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qrgb.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qrgba64.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qbrush.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvector.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qmatrix.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpolygon.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qregion.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qdatastream.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qiodevice.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qline.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtransform.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpainterpath.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qimage.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpixelformat.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpixmap.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qshareddata.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qhash.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer_impl.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qfont.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qfontmetrics.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qfontinfo.h \
@@ -514,19 +531,16 @@ release\moc_form3.cpp: C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qcursor.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qkeysequence.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qevent.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvariant.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmap.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qdebug.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qtextstream.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qlocale.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qset.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcontiguouscache.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qurl.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qurlquery.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfile.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfiledevice.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qvector2d.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtouchdevice.h \
+		..\dictionarypj\widget.h \
+		..\dictionarypj\form1.h \
+		..\dictionarypj\orderedlist.h \
+		..\dictionarypj\form2.h \
+		..\dictionarypj\hashmap.h \
+		..\dictionarypj\form3.h \
 		..\dictionarypj\form3.h \
 		release\moc_predefs.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\bin\moc.exe
@@ -641,6 +655,11 @@ release\moc_widget.cpp: C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidge
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
 		..\dictionarypj\form2.h \
 		..\dictionarypj\hashmap.h \
+		..\dictionarypj\form3.h \
+		..\dictionarypj\trietree.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QQueue \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qqueue.h \
+		..\dictionarypj\widget.h \
 		..\dictionarypj\widget.h \
 		release\moc_predefs.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\bin\moc.exe
@@ -791,7 +810,11 @@ release\form1.obj: ..\dictionarypj\form1.cpp ../dictionarypj/form1.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qwaitcondition.h \
 		../dictionarypj/widget.h \
 		../dictionarypj/form2.h \
-		../dictionarypj/hashmap.h
+		../dictionarypj/hashmap.h \
+		../dictionarypj/form3.h \
+		../dictionarypj/trietree.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QQueue \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qqueue.h
 
 release\form2.obj: ..\dictionarypj\form2.cpp ../dictionarypj/form2.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
@@ -903,13 +926,17 @@ release\form2.obj: ..\dictionarypj\form2.cpp ../dictionarypj/form2.h \
 		ui_form2.h \
 		../dictionarypj/widget.h \
 		../dictionarypj/form1.h \
-		../dictionarypj/orderedlist.h
+		../dictionarypj/orderedlist.h \
+		../dictionarypj/form3.h \
+		../dictionarypj/trietree.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QQueue \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qqueue.h
 
 release\form3.obj: ..\dictionarypj\form3.cpp ../dictionarypj/form3.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qwidget.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qtwidgetsglobal.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtguiglobal.h \
+		../dictionarypj/trietree.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QString \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qstring.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qchar.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qglobal.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qconfig-bootstrapped.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qconfig.h \
@@ -931,20 +958,18 @@ release\form3.obj: ..\dictionarypj\form3.cpp ../dictionarypj/form3.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmutex.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qnumeric.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qversiontagging.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtgui-config.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qtwidgets-config.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qwindowdefs.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobjectdefs.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qnamespace.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobjectdefs_impl.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qwindowdefs_win.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobject.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qstring.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qchar.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qbytearray.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qrefcount.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qnamespace.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qarraydata.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qstringbuilder.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QFile \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfile.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfiledevice.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qiodevice.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobject.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobjectdefs.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobjectdefs_impl.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qlist.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qalgorithms.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qiterator.h \
@@ -960,32 +985,51 @@ release\form3.obj: ..\dictionarypj\form3.cpp ../dictionarypj/form3.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvarlengtharray.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcontainerfwd.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobject_impl.h \
+		../dictionarypj/tool.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QDebug \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qdebug.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qhash.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmap.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qtextstream.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qlocale.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvariant.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qshareddata.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvector.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qpoint.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qset.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcontiguouscache.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer_impl.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QQueue \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qqueue.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qwidget.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qtwidgetsglobal.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtguiglobal.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtgui-config.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qtwidgets-config.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qwindowdefs.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qwindowdefs_win.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmargins.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpaintdevice.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qrect.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsize.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qpoint.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpalette.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qcolor.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qrgb.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qrgba64.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qbrush.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvector.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qmatrix.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpolygon.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qregion.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qdatastream.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qiodevice.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qline.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtransform.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpainterpath.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qimage.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpixelformat.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qpixmap.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qshareddata.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qhash.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer_impl.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qfont.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qfontmetrics.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qfontinfo.h \
@@ -993,19 +1037,15 @@ release\form3.obj: ..\dictionarypj\form3.cpp ../dictionarypj/form3.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qcursor.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qkeysequence.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qevent.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvariant.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmap.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qdebug.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qtextstream.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qlocale.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qset.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcontiguouscache.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qurl.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qurlquery.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfile.h \
-		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfiledevice.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qvector2d.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui\qtouchdevice.h \
+		../dictionarypj/widget.h \
+		../dictionarypj/form1.h \
+		../dictionarypj/orderedlist.h \
+		../dictionarypj/form2.h \
+		../dictionarypj/hashmap.h \
 		ui_form3.h
 
 release\hashmap.obj: ..\dictionarypj\hashmap.cpp ../dictionarypj/hashmap.h \
@@ -1187,6 +1227,10 @@ release\main.obj: ..\dictionarypj\main.cpp ../dictionarypj/widget.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
 		../dictionarypj/form2.h \
 		../dictionarypj/hashmap.h \
+		../dictionarypj/form3.h \
+		../dictionarypj/trietree.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QQueue \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qqueue.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QApplication \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qapplication.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcoreapplication.h \
@@ -1329,7 +1373,76 @@ release\tool.obj: ..\dictionarypj\tool.cpp ../dictionarypj/tool.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer_impl.h
 
-release\trietree.obj: ..\dictionarypj\trietree.cpp ../dictionarypj/trietree.h
+release\trietree.obj: ..\dictionarypj\trietree.cpp ../dictionarypj/trietree.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QString \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qstring.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qchar.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qglobal.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qconfig-bootstrapped.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qconfig.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qtcore-config.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsystemdetection.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qprocessordetection.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcompilerdetection.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qtypeinfo.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsysinfo.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qlogging.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qflags.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qatomic.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qbasicatomic.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qatomic_bootstrap.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qgenericatomic.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qatomic_cxx11.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qatomic_msvc.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qglobalstatic.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmutex.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qnumeric.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qversiontagging.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qbytearray.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qrefcount.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qnamespace.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qarraydata.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qstringbuilder.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QFile \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfile.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qfiledevice.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qiodevice.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobject.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobjectdefs.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobjectdefs_impl.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qlist.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qalgorithms.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qiterator.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qhashfunctions.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qpair.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qbytearraylist.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qstringlist.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qregexp.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qstringmatcher.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcoreevent.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qscopedpointer.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmetatype.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvarlengtharray.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcontainerfwd.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qobject_impl.h \
+		../dictionarypj/tool.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QDebug \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qdebug.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qhash.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qmap.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qtextstream.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qlocale.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvariant.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qshareddata.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qvector.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qpoint.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qset.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qcontiguouscache.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qsharedpointer_impl.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QQueue \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qqueue.h
 
 release\widget.obj: ..\dictionarypj\widget.cpp ../dictionarypj/widget.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QWidget \
@@ -1441,6 +1554,10 @@ release\widget.obj: ..\dictionarypj\widget.cpp ../dictionarypj/widget.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QStringList \
 		../dictionarypj/form2.h \
 		../dictionarypj/hashmap.h \
+		../dictionarypj/form3.h \
+		../dictionarypj/trietree.h \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\QQueue \
+		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore\qqueue.h \
 		ui_widget.h \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\QProgressDialog \
 		C:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets\qprogressdialog.h \

@@ -39,3 +39,16 @@ void Widget::on_pushButton_2_clicked()
     f2->show();
     this->close();
 }
+
+void Widget::on_pushButton_3_clicked()
+{
+    QProgressDialog *pd=new QProgressDialog("load...","cancel",0,100,this);
+    pd->setWindowTitle("loading now");
+    pd->setValue(50);
+    pd->show();
+    Form3 *f3 = new Form3;
+    f3->work();
+    pd->setValue(100);
+    f3->show();
+    this->close();
+}

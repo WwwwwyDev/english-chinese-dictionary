@@ -14,5 +14,6 @@ int Tool::trieIndex(QChar c)
     if (c == '.') return 26;
     if (c == '/') return 27;
     if (c == '-') return 28;
+    if (c == '\'') return 29;
     return -1;
 }

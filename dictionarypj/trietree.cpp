@@ -23,7 +23,7 @@ void TrieTree::fileRead(const QString &fp)
             QByteArray line = file.readLine();
             QString str = QString::fromLocal8Bit(line);
             QStringList strl = Tool::handleData(str);
-            this->insertWord(strl[0], strl[strl.length()-1]);
+            if(!this->insertWord(strl[0], strl[strl.length()-1])) qDebug()<<strl[0];
         }
         file.close();
       }
@@ -46,7 +46,7 @@ void TrieTree::fileWrite(const QString &fp)
                 QString qs = currentNode->getEnglishWord() + " " + currentNode->getChineseMeaning();
                 stream << qs << "\n";
             }
-            for(int i = 0; i < 29; i++)
+            for(int i = 0; i < 30; i++)
             {
                 if(currentNode->next[i])
                 {
