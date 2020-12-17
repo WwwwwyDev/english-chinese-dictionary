@@ -28,13 +28,13 @@ public:
     /*
      * @introduction:孩子结点指针
      */
-    TreeNode *next[28];
+    TreeNode *next[29];
     TreeNode()
     {
         this->englishWord = "no find";
         this->chineseMeaning = "no find";
         this->existence = false;
-        for(int i = 0; i < 28; i++)
+        for(int i = 0; i < 29; i++)
         {
             this->next[i] = nullptr;
         }

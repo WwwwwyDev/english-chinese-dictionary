@@ -3,11 +3,10 @@
 #include "trietree.h"
 int main(int argc, char *argv[])   
 {
-    TrieTree t;
-    t.insertWord("china","test");
-    t.insertWord("eklad","awdwa");
-    //t.deleteWord("china");
-    qDebug() << t.searchWord("china");
+    TrieTree t("l.txt");
+    t.fileRead("l.txt");
+    qDebug() <<t.insertWord("l/c","test");
+    qDebug() << t.searchWord("above-mentioned");
     QApplication a(argc, argv);
     Widget w;
     w.show();

@@ -13,5 +13,6 @@ int Tool::trieIndex(QChar c)
     if (c >= 'a' && c <= 'z') return c.unicode()-'a';
     if (c == '.') return 26;
     if (c == '/') return 27;
+    if (c == '-') return 28;
     return -1;
 }
