@@ -1,4 +1,4 @@
-#ifndef HASHMAP_H
+﻿#ifndef HASHMAP_H
 #define HASHMAP_H
 #include <QString>
 #include <QDebug>
@@ -190,7 +190,7 @@ public:
      */
     HashMap();
     /*
-     * @introduction:无参构造方法
+     * @introduction:构造方法
      * @pass:fp文件路径,rg初始化范围
      * @return:NULL
      */

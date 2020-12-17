@@ -29,7 +29,7 @@ private slots:
 private:
     Ui::Form1 *ui;
     OrderedList word[26];
-    qint64 sumn ;
+    int sumn ;
 };
 
 #endif // FORM1_H

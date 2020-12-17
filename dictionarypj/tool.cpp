@@ -1,4 +1,4 @@
-#include "tool.h"
+﻿#include "tool.h"
 
 QStringList Tool::handleData(QString data)
 {   if (data.at(data.length()-1) == '\n')
@@ -8,3 +8,10 @@ QStringList Tool::handleData(QString data)
     return data.split(" ");
 }
 
+int Tool::trieIndex(QChar c)
+{
+    if (c >= 'a' && c <= 'z') return c.unicode()-'a';
+    if (c == '.') return 26;
+    if (c == '/') return 27;
+    return -1;
+}

@@ -1,6 +1,8 @@
-#ifndef TRIETREE_H
+﻿#ifndef TRIETREE_H
 #define TRIETREE_H
 #include <QString>
+#include <QFile>
+#include "tool.h"
 /*
  * @auther:wwy
  * @date:2020/12/17
@@ -24,20 +26,15 @@ private:
     bool existence;
 public:
     /*
-     * @introduction:双亲结点指针
-     */
-    TreeNode *parent;
-    /*
      * @introduction:孩子结点指针
      */
-    TreeNode *next[27];
+    TreeNode *next[28];
     TreeNode()
     {
         this->englishWord = "no find";
         this->chineseMeaning = "no find";
         this->existence = false;
-        this->parent = nullptr;
-        for(int i = 0; i < 27; i++)
+        for(int i = 0; i < 28; i++)
         {
             this->next[i] = nullptr;
         }
@@ -105,8 +102,95 @@ public:
  */
 class TrieTree
 {
+private:
+    /*
+     * @introduction:根结点
+     */
+    TreeNode *root;
+    /*
+     * @introduction:文件路径
+     */
+    QString filePath;
+    /*
+     * @introduction:当前单词总数
+     */
+    int length;
 public:
+
+
+    /*
+     * @introduction:无参构造方法
+     * @pass:NULL
+     * @return:NULL
+     */
     TrieTree();
+
+
+    /*
+     * @introduction:构造方法
+     * @pass:fp读取文件的路径
+     * @return:NULL
+     */
+    TrieTree(const QString &fp);
+
+
+    /*
+     * @introduction:添加单词
+     * @pass:待添加的英语单词和中文释义
+     * @return:NULL
+     */
+    bool insertWord(const QString &ew, const QString &cm);
+
+    /*
+     * @introduction:查找英语单词并输出它的中文释义
+     * @pass:ew要查找的英语单词
+     * @return:找到的中文释义
+     */
+    QString searchWord(const QString &ew);
+
+    /*
+     * @introduction:删除单词
+     * @pass:待删除的英语单词
+     * @return:删除是否成功
+     */
+    bool deleteWord(const QString &ew);
+
+    /*
+     * @introduction:从文件读取数据
+     * @pass:fp文件路径
+     * @return:NULL
+     */
+    void fileRead(const QString &fp);
+
+
+    /*
+     * @introduction:将数据写入文件
+     * @pass:fn写入文件的路径
+     * @return:NULL
+     */
+    void fileWrite(const QString &fp);
+
+
+    /*
+     * @introduction:返回当前对应文件路径
+     * @pass:NULL
+     * @return:返回当前文件对应路径
+     */
+    QString getFilePath()
+    {
+        return this->filePath;
+    }
+
+
+    /*
+     * @introduction:返回当前表单词数量
+     * @pass:NULL
+     * @return:单词数量
+     */
+    int getLength()
+    {
+        return this->length;
+    }
 };
 
 #endif // TRIETREE_H

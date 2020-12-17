@@ -28,7 +28,7 @@ private slots:
 private:
     Ui::Form2 *ui;
     HashMap word[26];
-    qint64 sumn;
+    int sumn;
 };
 
 #endif // FORM2_H

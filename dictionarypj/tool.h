@@ -19,6 +19,12 @@ public:
      * @return:数据处理后的列表
      */
     QStringList static handleData(QString data);
+    /*
+     * @introduction:将字符转换成TrieTree上的结点编号
+     * @pass:data传入的字符
+     * @return:结点编号
+     */
+    int static trieIndex(QChar c);
 
 };
 

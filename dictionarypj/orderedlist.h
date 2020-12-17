@@ -110,7 +110,7 @@ public:
     OrderedList();
     /*
      * @introduction:构造方法
-     * @pass:fn读取文件的路径
+     * @pass:fp读取文件的路径
      * @return:NULL
      */
     OrderedList(const QString &fp);
