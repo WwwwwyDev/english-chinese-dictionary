@@ -62,6 +62,7 @@ public:
     QLabel *label_11;
     QLabel *label_12;
     QPushButton *pushButton_4;
+    QLabel *label_13;
 
     void setupUi(QWidget *Form1)
     {
@@ -213,6 +214,9 @@ public:
         pushButton_4 = new QPushButton(Form1);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
         pushButton_4->setGeometry(QRect(780, 260, 84, 24));
+        label_13 = new QLabel(Form1);
+        label_13->setObjectName(QStringLiteral("label_13"));
+        label_13->setGeometry(QRect(20, 10, 111, 16));
 
         retranslateUi(Form1);
 
@@ -241,6 +245,7 @@ public:
         label_11->setText(QApplication::translate("Form1", "\345\205\261\350\256\241\345\275\225\345\205\245:", Q_NULLPTR));
         label_12->setText(QString());
         pushButton_4->setText(QApplication::translate("Form1", "\350\277\224\345\233\236", Q_NULLPTR));
+        label_13->setText(QApplication::translate("Form1", "n\344\270\272\345\215\225\350\257\215\346\200\273\346\225\260", Q_NULLPTR));
     } // retranslateUi
 
 };

@@ -207,7 +207,7 @@ flush   v.(脸)发红 n.红晕
 flute   n.长笛，笛子
 flutter   v.飘动，振翼
 flux   n.流动，变迁
-fly   v.飞，驾机n.苍蝇
+fly   v.飞，驾机 n.苍蝇
 foam   n.泡沫 v.起泡
 fob   (缩)离岸价
 focus   n.焦点，中心 v.集中
@@ -215,7 +215,7 @@ fodder   n.饲料
 foe   n.敌人，宿敌
 fog   n.雾，翳
 foggy   adj.有雾的，雾蒙蒙的
-fold   v.折叠n.折痕
+fold   v.折叠 n.折痕
 foliage   n.叶子(总称)
 folk   n.人们，乡亲，亲属
 follow   v.跟随，听懂，遵循

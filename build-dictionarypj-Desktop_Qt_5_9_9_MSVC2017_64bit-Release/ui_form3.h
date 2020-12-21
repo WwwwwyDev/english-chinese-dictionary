@@ -225,7 +225,7 @@ public:
 
     void retranslateUi(QWidget *Form3)
     {
-        Form3->setWindowTitle(QApplication::translate("Form3", "Form", Q_NULLPTR));
+        Form3->setWindowTitle(QApplication::translate("Form3", "\350\213\261\346\261\211\345\255\227\345\205\270Trie\346\240\221", Q_NULLPTR));
         pushButton_4->setText(QApplication::translate("Form3", "\350\277\224\345\233\236", Q_NULLPTR));
         label_11->setText(QApplication::translate("Form3", "\345\205\261\350\256\241\345\275\225\345\205\245:", Q_NULLPTR));
         groupBox->setTitle(QApplication::translate("Form3", "\346\237\245\346\211\276\345\215\225\350\257\215O(m)", Q_NULLPTR));
