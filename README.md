@@ -68,7 +68,7 @@
 
 ##### 介绍
 
-采用djb2哈希函数进行数据分布，采用拉链法(双向链表)处理冲突，空间复杂度为O(n)，设散列表的装填因子为α
+采用djb2哈希函数进行数据分布，采用拉链法(双向链表)处理冲突，空间复杂度为O(n)
 
 ##### 查找
 
@@ -111,6 +111,50 @@
 | `void fileRead(const QString &fp);`                      | 文件路径                   | NULL           | 从文件读取数据                 |
 | `int getLength()`                                        | NULL                       | 单词数量       | 返回当前表单词数量             |
 
-### 功能测试
+## 功能测试
 
-有序表
+#### 有序表
+
+##### 查找
+
+![](https://gitee.com/wu_wen_yi/english-chinese-dictionary/raw/master/src/image/有序表查找.PNG)
+
+##### 添加
+
+![](https://gitee.com/wu_wen_yi/english-chinese-dictionary/raw/master/src/image/有序表添加.PNG)
+
+##### 删除
+
+![](https://gitee.com/wu_wen_yi/english-chinese-dictionary/raw/master/src/image/有序表删除.PNG)
+
+#### 散列表
+
+##### 查找
+
+![](https://gitee.com/wu_wen_yi/english-chinese-dictionary/raw/master/src/image/散列表查找.PNG)
+
+##### 添加
+
+![](https://gitee.com/wu_wen_yi/english-chinese-dictionary/raw/master/src/image/散列表添加.PNG)
+
+##### 删除
+
+![](https://gitee.com/wu_wen_yi/english-chinese-dictionary/raw/master/src/image/散列表删除.PNG)
+
+#### Trie树
+
+##### 查找
+
+![](https://gitee.com/wu_wen_yi/english-chinese-dictionary/raw/master/src/image/Trie%E6%A0%91%E6%9F%A5%E6%89%BE.PNG)
+
+##### 添加
+
+![](https://gitee.com/wu_wen_yi/english-chinese-dictionary/raw/master/src/image/Trie%E6%A0%91%E6%B7%BB%E5%8A%A0.PNG)
+
+##### 删除
+
+![](https://gitee.com/wu_wen_yi/english-chinese-dictionary/raw/master/src/image/Trie%E6%A0%91%E5%88%A0%E9%99%A4.PNG)
+
+## 总结
+
+数据结构课程设计让我们从底层开始一步一步完善自己的数据结构，从中我收获了很多，同时也加深了对各种数据结构的认识。通过对数据结构的应用、对各种算法的优化和对bug的修复，我感受到了编程的乐趣，同时也提升了编码的能力。
