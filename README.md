@@ -5,14 +5,6 @@
 
 设计实现一个小型英汉双解词典
 
-## 代码及版本管理地址
-
-[gitee码云版本地址(点击跳转)](https://gitee.com/wu_wen_yi/english-chinese-dictionary)
-
-## Windows-release下载地址
-
-[下载地址](https://gitee.com/wu_wen_yi/english-chinese-dictionary/raw/master/src/dictrealse.rar)
-
 ## **问题描述**
 
 设计一个英汉双解电子词典，支持查找、插入、删除等功能。
